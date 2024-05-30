@@ -1,0 +1,138 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--body);
+    z-index: 3;
+    transition: all 1s;
+    /* transition: background-color 1s;
+    transition: background-image 5s; */
+}
+
+dl, ol, ul{
+    margin-bottom: 0;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo{
+    font-size: 24px;
+    color: var(--section-title-color)
+}
+
+#nav-list{
+    list-style: none;
+    gap: 48px;
+    display: flex;
+}
+
+#logo{
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; /* Repeat the background image */
+    height: 35px;
+    width: 63px;
+}
+
+.nav-item a{
+    transition: all 0.5s;
+    text-decoration: none;
+    color: var(--default-color-secondary);
+    font-weight: 600;
+}
+
+.nav-item.active a{
+    color: var(--default-color);
+    border-bottom: 3px solid var(--section-title-color);
+}
+
+#mobile-btn{
+    display: none;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+.box-shadow-header{
+    background-color: var(--body-secondary);
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-header #logo{
+    background-image: url(../images/logo-2.png);
+}
+
+@media screen and (max-width: 1650px){
+    header{
+        padding: 28px 3%;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    header{
+       padding: 28px 2%;
+       font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    #mobile-btn{
+        display: block;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+
+    #nav-list,
+    #navbar .btn-default{
+        display: none;
+    }
+
+    #mobile-btn i {
+        transition: transform 0.5s ease;
+    }
+
+    #mobile-btn i.fa-x {
+        transform: rotate(180deg);
+    }
+    #mobile-menu{
+        transition: all 1s;
+    }
+
+    #mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f1f1c6;
+        padding: 16px 0;
+        border: 1px solid #f1f1c6;
+        border-radius: 10px;
+    }
+    .box-shadow-header #mobile-menu.active{
+        background: transparent;
+        border: none
+    }
+
+    #mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile-nav-list .nav-item{
+        list-style: none;
+        text-align: center;
+    }
+    
+    /* #mobile-menu.active */
+}

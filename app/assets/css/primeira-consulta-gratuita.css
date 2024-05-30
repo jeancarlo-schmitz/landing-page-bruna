@@ -1,0 +1,76 @@
+
+#consulta-gratuita{
+    background-color: var(--body-secondary);
+}
+
+.consulta-gratuita-card{
+    width: 60%;
+    height: auto;
+    margin-top: -7.5rem;
+}
+
+.cta-card {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #e3e6ea; /* Light border */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1.5rem;
+}
+.cta-card .card-title {
+    color: #343a40; /* Dark text color */
+}
+.cta-card .card-text {
+    color: #6c757d; /* Gray text color */
+}
+.cta-card .btn-primary {
+    background-color: #17a2b8; /* Custom primary color */
+    border: none;
+}
+.cta-card .btn-primary:hover {
+    background-color: #138496; /* Darker shade on hover */
+}
+.cta-content {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.cta-text {
+    flex: 1;
+}
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+/* @media screen and (max-width: 1470px){
+    .consulta-gratuita-card{
+        margin-top: -8.5rem;
+    }
+} */
+
+@media screen and (max-width: 1170px){
+    .consulta-gratuita-card{
+        width: 70%;
+        margin-top: -6.5rem;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .consulta-gratuita-card{
+        width: 80%;
+        margin-top: -5.5rem;
+    }
+    .cta-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .consulta-gratuita-card{
+        width: 90%;
+    }
+}

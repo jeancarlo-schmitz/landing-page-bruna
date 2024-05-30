@@ -1,0 +1,66 @@
+#sobre-mim{
+    min-height: calc(100vh -96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+
+#sobre-mim-banner{
+    width: 500px;
+    height: auto;
+}
+
+#sobre-mim .title{
+    font-size: 3rem;
+}
+
+#sobre-mim .section-subtitle{
+    font-size: 3rem;
+}
+
+#sobre-mim-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1170px){
+    #sobre-mim{
+        flex-direction: column;
+    }
+
+    #sobre-mim .section-subtitle{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #sobre-mim-banner{
+        width: 400px;
+        height: auto;
+    }
+
+    #sobre-mim-content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #sobre-mim .section-subtitle{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #sobre-mim-banner{
+        width: 300px;
+        height: auto;
+    }
+    #sobre-mim-content{
+        width: 100%;
+    }
+}
+

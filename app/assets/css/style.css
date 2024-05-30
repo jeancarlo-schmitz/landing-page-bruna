@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('terapia.css');
+@import url('sobreMim.css');
+@import url('primeira-consulta-gratuita.css');
+@import url('avaliacoes.css');
+@import url('psicoterapia-online.css');
+@import url('faq.css');
+@import url('footer.css');
+
+:root{
+    --body: #F5F5DC;
+    --body-secondary: #fbfbfb;
+    --text-color: #707070;
+    --color-border: #c5c5c5;
+    --color-header-table: #858585c4;
+    --white-text-color: #FFF;
+    --default-color: #525252;
+    --default-color-secondary: #525252ad;
+    --section-title-color: #3084c9;
+    --description-color: #434343;
+    --box-shadow-default: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    
+    --footer-color: #ffe8b4;
+
+    /* transition */
+    --tran-3s: .3s;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.color-white{
+    color: var(--white-text-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--default-color);
+    background-color: var(--body);
+}
+
+.section{
+    padding: 28px 8%;
+}
+
+.btn{
+    color: var(--default-color);
+    --btn-default-color: #5fe55f;
+    --btn-default-hover-color: #40cb40;
+    gap: 4px;
+    display: flex;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-default-color);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color var(--tran-3s) ease;
+}
+
+.btn-default:hover{
+    background-color: var(--btn-default-hover-color);
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--white-text-color);
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--default-color);
+    box-shadow: var(--box-shadow-default);
+    transition: box-shadow var(--tran-3s) ease;
+}
+
+.social-media-buttons a:hover{
+    box-shadow: 0 0 2px 4px rgb(95 229 95 / 19%)
+}
+
+.section-title{
+    color: var(--section-title-color);
+    font-size: 1.563rem;
+}
+
+.section-subtitle{
+    color: var(--default-color);
+    font-size: 2.1875rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-center{
+    align-content: center;
+    justify-content: center;
+}
+
+.box-espaco-30{
+    height: 30px;
+    width: 100%;
+}
+
+.box-espaco-50{
+    height: 50px;
+    width: 100%;
+}
+
+.box-espaco-70{
+    height: 70px;
+    width: 100%;
+}

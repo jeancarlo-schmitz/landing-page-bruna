@@ -1,0 +1,31 @@
+.faq-section {
+    text-align: center;
+    background-color: var(--body-secondary);
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.accordion-header {
+    text-align: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+.accordion-header:hover {
+    background-color: #e2e2e2;
+}
+.accordion-body {
+    padding: 15px;
+    display: none;
+}
+
+.accordion-body.active {
+    display: block;
+    background: #fff;
+}

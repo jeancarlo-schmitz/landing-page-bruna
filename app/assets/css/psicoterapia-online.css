@@ -1,0 +1,66 @@
+#psicoterapia-online{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#psicoterapia-online i{
+    color: var(--section-title-color);
+}
+
+.psicoterapia-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.psicoterapia-image img {
+    width: 70%;
+    height: 300px;
+}
+
+.psicoterapia-card i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.psicoterapia-content{
+    margin-top: 20px;
+}
+
+#banner-mobile{
+    display: none;
+}
+
+/* @media screen and (max-width: 1370px){
+    .psicoterapia-image img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .psicoterapia-image img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .psicoterapia-image img {
+        height: 500px;
+    }
+} */
+
+@media screen and (max-width: 991px){
+    .psicoterapia-image img {
+        height: 250px;
+    }
+
+    #banner-mobile{
+        display: block;
+    }
+
+    #banner-web{
+        display: none;
+    }
+}
