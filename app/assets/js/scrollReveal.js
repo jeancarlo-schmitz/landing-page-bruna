@@ -79,7 +79,7 @@ $(document).ready(function() {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#consulta-gratuita', {
+    ScrollReveal().reveal('#box-consulta-gratuita', {
         origin: 'bottom',
         duration: 2000,
         distance: '20%'
@@ -89,24 +89,24 @@ $(document).ready(function() {
     ScrollReveal().reveal('#card-1', {
         origin: 'left',
         duration: 2000,
-        distance: '20%'
+        distance: '10%'
     });
     ScrollReveal().reveal('#card-2', {
         origin: 'left',
         duration: 2500,
-        distance: '20%'
+        distance: '10%'
     });
 
     ScrollReveal().reveal('#card-3', {
         origin: 'right',
         duration: 2000,
-        distance: '20%'
+        distance: '10%'
     });
 
     ScrollReveal().reveal('#card-4', {
         origin: 'right',
         duration: 2500,
-        distance: '20%'
+        distance: '10%'
     });
 
     ScrollReveal().reveal('#card-meio', {

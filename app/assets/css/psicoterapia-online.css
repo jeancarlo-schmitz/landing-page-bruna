@@ -3,6 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--body-secondary);
+}
+
+.psicoterapia-online-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #psicoterapia-online i{

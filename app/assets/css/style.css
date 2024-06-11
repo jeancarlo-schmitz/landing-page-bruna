@@ -45,7 +45,8 @@ html{
 
 body{
     color: var(--default-color);
-    background-color: var(--body);
+    /* background-color: var(--body); */
+    background-color: var(--body-secondary);
 }
 
 .section{
@@ -80,17 +81,16 @@ body{
 
 .social-media-buttons{
     display: flex;
-    gap: 18px;
+    /* gap: 18px; */
 }
 
 .social-media-buttons a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 40px;
+    width: 65px;
     background-color: var(--white-text-color);
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     border-radius: 10px;
     text-decoration: none;
     color: var(--default-color);
@@ -133,6 +133,7 @@ body{
 .box-espaco-50{
     height: 50px;
     width: 100%;
+    background-color: var(--body);
 }
 
 .box-espaco-70{

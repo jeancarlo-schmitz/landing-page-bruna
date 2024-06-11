@@ -1,9 +1,36 @@
-#home{
+/* #home{
     display: flex;
     min-height: calc(100vh - 96px);
     position: relative;
-}
+} */
 
+    #home{
+        background-color: var(--body-secondary);
+        color: var(--body-secondary);
+        min-height: 100%;
+        padding-top: 0;
+        position: relative;
+        width: 100%;
+        height: calc(107vh - 100px);
+        background-image: url('/app/assets/images/banner-2-teste3.png');
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0 0 94px 94px;
+    }
+    
+    /* #home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); 
+        z-index: 1;
+    } */
 #cta{
     width: 40%;
     display: flex;
@@ -15,7 +42,8 @@
 
 #cta .title{
     font-size: 4rem;
-    color: var(--default-color);
+    /* color: var(--default-color); */
+    color: var(--body-secondary);
     line-height: 1.1;
 }
 
@@ -27,15 +55,43 @@
     font-size: 1.2rem;
 }
 
+#cta #assinatura,
+#cta #registro{
+    font-size: 1rem;
+    display: flex;
+    text-align: right;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#cta #registro{
+    font-size: 0.8rem;
+}
+
 #cta-buttons{
     display: flex;
-    gap: 24px;
+    gap: 9px;
 }
 
 #cta-buttons a{
     text-decoration: none;
     color: var(--default-color);
 }
+
+/* #cta .social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 100%;
+    background-color: var(--white-text-color);
+    font-size: 1.75rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--default-color);
+    box-shadow: var(--box-shadow-default);
+    transition: box-shadow var(--tran-3s) ease;
+} */
 
 #phone-button{
     display: flex;
@@ -46,6 +102,13 @@
     font-weight: 500;
     box-shadow: var(--box-shadow-default);
     border-radius: 12px;
+}
+
+#phone-button img{
+    width: 35px;
+    height: 41px;
+    border: 1px solid #9b9b9b;
+    border-radius: 50%;
 }
 
 #phone-button button{
@@ -101,13 +164,14 @@
         padding-top: 0;
         position: relative;
         width: 100%;
-        height: calc(100vh - 100px);
-        background-image: url('/app/assets/images/banner-2.jpeg');
+        height: calc(101vh - 100px);
+        background-image: url('/app/assets/images/banner-2-teste3.png');
         background-size: cover;
         background-position: top;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-radius: 0;
     }
     
     #home::before {
@@ -141,6 +205,24 @@
         width: 52%;
         align-items: start;
         text-align: start;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #home{
+        color: var(--body-secondary);
+        min-height: 100%;
+        padding-top: 0;
+        position: relative;
+        width: 100%;
+        height: calc(101vh - 100px);
+        background-image: url('/app/assets/images/banner-2.jpeg');
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
     }
 }
 

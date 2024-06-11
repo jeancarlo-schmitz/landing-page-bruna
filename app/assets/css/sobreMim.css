@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 43px;
+    background-color: var(--body);
+    text-align: justify;
 }
 
 #sobre-mim-banner{
