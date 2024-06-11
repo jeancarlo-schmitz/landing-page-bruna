@@ -24,7 +24,7 @@
 }
 
 .psicoterapia-image img {
-    width: 70%;
+    width: 100%;
     height: 300px;
 }
 
@@ -67,6 +67,11 @@
     #banner-mobile{
         display: block;
     }
+
+    /* .psicoterapia-image img {
+        width: 90%;
+        height: 300px;
+    } */
 
     #card-meio{
         display: none;
