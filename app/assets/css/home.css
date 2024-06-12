@@ -4,22 +4,45 @@
     position: relative;
 } */
 
-    #home{
-        background-color: var(--body-secondary);
-        color: var(--body-secondary);
-        min-height: 100%;
-        padding-top: 0;
-        position: relative;
-        width: 100%;
-        height: calc(107vh - 100px);
-        background-image: url('/app/assets/images/banner-2-teste3.png');
-        background-size: cover;
-        background-position: top;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 0 0 94px 94px;
-    }
+/* #home {
+    background-color: var(--body-secondary);
+    color: var(--body-secondary);
+    min-height: 100%;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    height: calc(107vh - 100px);
+    background-image: url('/app/assets/images/banner-2-teste3.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 94px 94px;
+} */
+
+#home {
+    position: relative;
+    width: 100%;
+    height: calc(102vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 94px 94px;
+    color: var(--body-secondary);
+    /* background-color: var(--body-secondary); */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca a imagem atrás de outros conteúdos */
+    border-radius: 0 0 94px 94px;
+}
     
     /* #home::before {
         content: '';
@@ -156,9 +179,14 @@
     right: 0;
 }
 
+#banner-terapia-online-mobile,
+#banner-terapia-online-tablet{
+    display: none;
+}
 
-@media screen and (max-width: 1400px){
-    #home{
+
+ @media screen and (max-width: 1400px){
+     /* #home{
         color: var(--body-secondary);
         min-height: 100%;
         padding-top: 0;
@@ -172,8 +200,8 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 0;
-    }
-    
+    } 
+
     #home::before {
         content: '';
         position: absolute;
@@ -181,8 +209,16 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); /* Camada preta com opacidade de 0.6 */
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
+    } */
+
+    #banner-terapia-online-tablet{
+        display: block;
+    }
+
+    #banner-terapia-online-web{
+        display: none;
     }
 
     #cta .title{
@@ -208,29 +244,31 @@
     }
 }
 
-@media screen and (max-width: 1300px){
+
+@media screen and (max-width: 980px){
+        
+    #banner-terapia-online-mobile{
+        display: block;
+    }
+    #banner-terapia-online-web{
+        display: none;
+    }
+
     #home{
-        color: var(--body-secondary);
-        min-height: 100%;
-        padding-top: 0;
-        position: relative;
+        border-radius: none;
+    }
+
+    #home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: calc(101vh - 100px);
-        background-image: url('/app/assets/images/banner-2.jpeg');
-        background-size: cover;
-        background-position: top;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
     }
-}
 
-
-@media screen and (max-width: 780px){
-    #home{
-        background-position: center;
-    }
     #phone-button button{
         display: none;
     }
