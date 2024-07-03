@@ -76,43 +76,43 @@ $(document).ready(function() {
     ScrollReveal().reveal('#sobre-mim-historia', {
         origin: 'right',
         duration: 2000,
-        distance: '20%'
+        distance: '5%'
     });
 
     ScrollReveal().reveal('#box-consulta-gratuita', {
         origin: 'bottom',
         duration: 2000,
-        distance: '20%'
+        distance: '5%'
     });
 
     // psicoterapia
     ScrollReveal().reveal('#card-1', {
         origin: 'left',
         duration: 2000,
-        distance: '10%'
+        distance: '5%'
     });
     ScrollReveal().reveal('#card-2', {
         origin: 'left',
         duration: 2500,
-        distance: '10%'
+        distance: '5%'
     });
 
     ScrollReveal().reveal('#card-3', {
         origin: 'right',
         duration: 2000,
-        distance: '10%'
+        distance: '5%'
     });
 
     ScrollReveal().reveal('#card-4', {
         origin: 'right',
         duration: 2500,
-        distance: '10%'
+        distance: '5%'
     });
 
     ScrollReveal().reveal('#card-meio', {
         origin: 'bottom',
         duration: 2500,
-        distance: '20%'
+        distance: '5%'
     });
 
 // faq
