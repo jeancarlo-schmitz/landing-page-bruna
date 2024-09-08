@@ -40,3 +40,14 @@
     display: block;
     background: #fff;
 }
+
+.accordion-body .circle {
+    margin-left: 10px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
